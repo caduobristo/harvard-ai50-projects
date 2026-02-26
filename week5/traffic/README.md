@@ -1,0 +1,5 @@
+I started by testing the same layers covered in class to familiarize myself with the code and neural network usage, achieving the result: *accuracy: 0.0561 - loss: 3.5024*, which was not a very good result. To try to improve, I first added two more convolutional layers, the first with 16 filters, the second 32 and the third 64, all with kernel (2, 2), but this doesn't seem to have changed the result much: accuracy: 0.0559 - loss: 3.4988.
+
+The second test was to add more dense layers before the last one with, respectively, 128, 64 and 32 units, and this greatly improved the results: *accuracy: 0.9421 - loss: 0.2431*. Finally, what made the results improve even more was changing the Dropout position, previously it was before the last layer that would generate the results, moving it to after MaxPooling made the results very satisfactory: accuracy: 0.9780 - loss: 0.0891.
+
+Data: https://cdn.cs50.net/ai/2023/x/projects/5/gtsrb.zip
