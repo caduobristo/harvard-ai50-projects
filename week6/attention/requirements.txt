@@ -1,0 +1,4 @@
+pillow
+tensorflow
+tf-keras
+transformers<5
